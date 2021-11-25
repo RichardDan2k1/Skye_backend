@@ -1,0 +1,64 @@
+//APIs to work on
+
+Login
+
+Shall we authenticate?
+- Google Sign in - I'll be sending a token
+- Authenticate and send response success along with my details
+"/login" => google signin
+
+1. login route
+- isNewUser - add it to db
+- simply send data back
+
+2. projects route
+- GET request - All my projects only
+- POST request - I'll send you details - add a new project - How many increments incase it is incremental
+- DELETE request - I'll send which project - delete it from database
+
+POST request me what data?
+{
+    projectId: backend has to add,
+    title: "Preparing for CATs",
+    sdlc: "waterfall/incremental/vmodel",
+    default planning phase
+    phase: "planning"
+    increment_number: 1
+}
+
+GET request
+[
+    {
+        title: "Preparing for CATs",
+        sdlc: "waterfall/incremental/vmodel"
+        phase: "coding",
+        cards: {
+            "coding":[
+                {
+
+                },
+                {
+
+                }
+            ]
+        }
+    },
+    {
+
+    }
+]
+
+
+6TH NOV 2021
+POST - Login
+GET - basic project details - sdlc
+
+10TH NOV 2021
+POST - Create a new project
+GET - cards all phases currently done and running
+PUT - new card - works as add and update
+
+14TH NOV 2021
+DELETE - cards
+POST - Next phase - number store karo
+DELETE - Finish Project - delete everything
