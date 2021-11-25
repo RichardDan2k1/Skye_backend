@@ -4,4 +4,4 @@ http.createServer((req,res)=>{
     res.write("Server is up and Running");
     res.end()
 })
-.listen(3000);
+.listen(5000);
